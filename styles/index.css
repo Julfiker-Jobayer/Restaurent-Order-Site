@@ -1,5 +1,280 @@
-div{
-    background-color: rosybrown;
-    padding: 20px;
-    margin-bottom: 20px;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+  /* font-family: "Montserrat", sans-serif; */
+
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  .btn{
+    border-radius: 8px;
+    background: rgb(82, 195, 3);
+    color: rgb(255, 255, 255);
+    font-family: Work Sans;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: center;
+    padding: 18px 28px;
+  }
+#hero{
+    height: 800px;
+    background: linear-gradient(0.00deg, rgb(9, 9, 9) 3.482%,rgba(16, 16, 16, 0) 101.632%), url(../make-essential-UI-components-Resources/assets/hero-bg.png);
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#hero > #hero-content{
+    text-align: center;
+    width: 891px;
+    height: 341px;
+}
+#hero-content > .subtitle{
+    color: rgb(255, 255, 255);
+    font-family: Work Sans;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 33px;
+    letter-spacing: 0%;
+    text-align: center;
+    opacity: 0.8;
+    margin-bottom: 14px;
+}
+#hero-content > .title{
+    color: rgb(255, 255, 255);
+    font-family: Work Sans;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 70px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-bottom: 21px;
+}
+#hero-content > .description{
+    color: rgb(255, 255, 255);
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+/* cards section */
+#card-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1065px;
+  padding: 146px 261px 160px;
+}
+#card-box .card-section{
+  width: 1150px;
+  height: 669px;
+}
+#card-box .card-section .text-content .subtitle{
+    color: rgb(16, 16, 16);
+    font-family: Work Sans;
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+    opacity: 0.6;
+    margin-bottom: 14px;
+}
+#card-box .card-section .text-content .title{
+    color: rgb(16, 16, 16);
+    font-family: Work Sans;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 56px;
+    letter-spacing: 0%;
+    text-align: center;
+    width: 602px;
+    margin: auto;
+    margin-bottom: 42px;
+}
+
+#card-box .card-section .card-container{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#card-box .card-section .card-container .card{
+  width: 369px;
+  gap: 20px;
+}
+#card-box .card-section .card-container .card img{
+  width: 100%;
+  height: 247px;
+  margin: 28px 0;
+}
+#card-box .card-section .card-container .card .shop-name{
+  color: rgb(16, 16, 16);
+  font-family: Work Sans;
+  font-size: 21px;
+  font-weight: 600;
+  letter-spacing: 0%;
+  text-align: center;
+
+  border-radius: 7px;
+  background: rgba(82, 195, 3, 0.15);
+  padding: 12px 28px;
+  margin: 21px auto;
+  width: 163px;
+}
+#card-box .card-section .card-container .card .discount{
+  color: rgb(16, 16, 16);
+  font-family: Work Sans;
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 41px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-bottom: 21px;
+}
+#card-box .card-section .card-container .card .description{
+  color: rgb(16, 16, 16);
+  font-family: Work Sans;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+  opacity: 0.7;
+  margin-bottom: 56px;
+}
+#card-box .card-section .btn-container{
+  text-align: center;
+}
+
+
+/*details section*/
+
+#details{
+  display: flex;
+  align-items: center;
+  height: 585px;
+  width: 100%;
+}
+#details .img-div{
+  width: 50%;
+  height: 100%;
+}
+#details .img-div img{
+  width: 100%;
+  height: 100%;
+}
+#details .detail-div{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#details .detail-div .title{
+  color: rgb(16, 16, 16);
+  font-family: Work Sans;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 56px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-bottom: 21px;
+}
+#details .detail-div .description{
+  color: rgb(16, 16, 16);
+  font-family: Work Sans;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+  opacity: 0.6;
+  margin-bottom: 68px;
+}
+#details .detail-div .follow-title{
+  color: rgb(16, 16, 16);
+  font-family: Work Sans;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 33px;
+  letter-spacing: 0%;
+  text-align: center;
+  opacity: 0.7;
+  margin-bottom: 54px;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgba(16, 16, 16, 0.2);
+  border-top: 1px solid rgba(16, 16, 16, 0.2);
+  padding: 30px 10px 30px 10px;
+  width: 100%;
+}
+#details .detail-div .social img{
+  width: 227px;
+  height: 35px;
+}
+
+
+/*social  section*/
+
+#social{
+  height: 585px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("/make-essential-UI-components-Resources/assets/social-bg.png");
+}
+#social .detail-div{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#social .detail-div .title{
+  color: rgb(16, 16, 16);
+  font-family: Work Sans;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 56px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-bottom: 21px;
+}
+#social .detail-div .description{
+  color: rgb(16, 16, 16);
+  font-family: Work Sans;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+  opacity: 0.6;
+  margin-bottom: 68px;
+}
+#social .detail-div .follow-title{
+  color: rgb(16, 16, 16);
+  font-family: Work Sans;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 33px;
+  letter-spacing: 0%;
+  text-align: center;
+  opacity: 0.7;
+  margin-bottom: 54px;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgba(16, 16, 16, 0.2);
+  border-top: 1px solid rgba(16, 16, 16, 0.2);
+  padding: 30px 10px 30px 10px;
+  width: 100%;
+}
+#social .detail-div .social img{
+  width: 227px;
+  height: 35px;
 }
