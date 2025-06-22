@@ -19,7 +19,7 @@
   }
 #hero{
     height: 800px;
-    background: linear-gradient(0.00deg, rgb(9, 9, 9) 3.482%,rgba(16, 16, 16, 0) 101.632%), url(../make-essential-UI-components-Resources/assets/hero-bg.png);
+    background: linear-gradient(0.00deg, rgb(9, 9, 9) 3.482%,rgba(16, 16, 16, 0) 101.632%), url(../assets/hero-bg.png);
     background-size: cover;
     background-position: center;
 
@@ -228,7 +228,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("/make-essential-UI-components-Resources/assets/social-bg.png");
+  background: url("/assets/social-bg.png");
 }
 #social .detail-div{
   height: 100%;
