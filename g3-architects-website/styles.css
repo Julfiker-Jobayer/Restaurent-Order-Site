@@ -81,6 +81,7 @@ body{
 }
 .banner img{
     margin-bottom: 45px;
+    width: 100%;
 }
 /*header styles ends*/
 /*header styles starts*/
@@ -111,14 +112,21 @@ body{
     margin-bottom: 32px;
 }
 
+
+
 .architect-details{
     gap: 146px;
     margin-bottom: 160px;
 }
+
 .architect-details-text-container{
 
 }
 
+#vertical{
+    border-left: 5px solid #FF900E;
+    padding: 20px;
+}
 .architect-details-title{
     max-width: 460px;
     font-size: 45px;
@@ -131,17 +139,19 @@ body{
 }
 .architect-details-card{
     padding: 30px;
-    box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 10px 0px rgba(0, 0, 0, 0.25);
     margin-bottom: 20px;
     border-radius: 8px;
 }
 .architect-details-card .card-ttile{
     font-size: 20px;
     font-weight: bold;
+    margin: 0px 0px;
 }
 .architect-details-card .card-desc{
     font-size: 16px;
     line-height: 26px;
+    margin: 0px 0px;
 }
 .architect-details-img-container{
     position: relative;
@@ -150,21 +160,23 @@ body{
 }
 .experience-card{
     position: absolute;
-    left: -92px;
-    bottom: -30px;
+    left: -77px;
+    bottom: -38px;
     background-color: #FF900E;
-    padding: 30px 45px;
+    padding: 45px 45px;
     text-align: center;
     border-radius: 8px;
     color: white;
 }
 .experience-title{
-    font-size: 45px;
+    font-size: 50px;
     font-weight: bold;
+    margin: 0;
 }
 .experience-subtitle{
     font-size: 20px;
     margin-top: -30px;
+    margin: 0;
 }
 .work-summary-title{
     font-size: 45px;
@@ -225,6 +237,9 @@ body{
     align-items: center;
     margin-bottom: 130px;
 }
+.sponsor-image-container img{
+    filter: grayscale(100%);
+}
 /*header styles ends*/
 /*header styles starts*/
 
@@ -235,3 +250,78 @@ body{
     font-size: 20px;
 }
 /*header styles ends*/
+
+
+
+
+
+.hide{
+    display: none;
+}
+
+@media screen and (max-width: 576px){
+    .display-flex{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo{
+        margin-bottom: 20px;
+    }
+    .navbar-menu{
+        padding: 0;
+    }
+    .list-items{
+        margin: 20px 0;
+    }
+    .banner, .features, .architect-details, .work-summary, .sponsor{
+        padding: 20px;
+    }
+    .banner-title{
+        font-size: 45px;
+    }
+
+    .features-image-collage{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .architect-details-img-container img{
+        width: 100%;
+    }
+    .experience-card{
+        scale: 0.5;
+        margin-bottom: -40px;
+        margin-left: -20px;
+    }
+    .summary-cards, .sponsor-image-container{
+        gap: 30px;
+    }
+    .summary-cards{
+        margin-bottom: 50px;
+    }
+}
+@media screen and (min-width:576px) and (max-width:992px) {
+
+    .navbar, .banner, .features, .architect-details, .work-summary, .sponsor{
+        padding: 20px;
+    }
+    .features, .architect-details, .sponsor-image-container{
+        flex-direction: column;
+    }
+    .architect-details-img-container img{
+        width: 100%;
+        text-align: center;
+    }
+    .experience-card{
+        left: 30px;
+    }
+    .summary-cards{
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .summary-cards{
+        margin-bottom: 30px;
+    }
+    .sponsor-image-container{
+        gap: 50px;
+    }
+}
